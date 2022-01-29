@@ -8,14 +8,13 @@ import org.apache.commons.io.FileUtils;
 //import java.util.HashMap;
 //import java.util.Map;
 
-
 //import org.locators.Encapsulation;
 
 public class ParameterMap {
 
-public static void main(String[] args) throws IOException {
+	public static void main(String[] args) throws IOException {
 
-	File f = new File("D:\\Facebook\\Instagram\\Whatsapp\\hello.txt");
+		File f = new File("D:\\Facebook\\Instagram\\Whatsapp\\hello.txt");
 
 //	boolean mkdir = f.mkdir();
 //	System.out.println(mkdir);
@@ -25,44 +24,27 @@ public static void main(String[] args) throws IOException {
 //	System.out.println(mkdirs1);
 //	boolean createNewFile = f.createNewFile();
 //	System.out.println(createNewFile);
-	boolean canRead = f.canRead();
-	System.out.println(canRead);
-	boolean canWrite = f.canWrite();
-	System.out.println(canWrite);
-	
-	//write in txtfile
-	//FileUtils.write(f, "Welcome to Javafile");
-	FileUtils.write(f, "This is Venkateshraj",true);
-	FileUtils.write(f, "HelloWorld", false);
-	
-	List<String> readLines = FileUtils.readLines(f);
-	System.out.println(readLines);
-	
-	for (String string : readLines) {
-		System.out.println(string);
-	}
-	
-}
+		boolean canRead = f.canRead();
+		System.out.println(canRead);
+		boolean canWrite = f.canWrite();
+		System.out.println(canWrite);
 
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+		// write in txtfile
+		// FileUtils.write(f, "Welcome to Javafile");
+		FileUtils.write(f, "This is Venkateshraj", true);
+		FileUtils.write(f, "HelloWorld", false);
+
+		List<String> readLines = FileUtils.readLines(f);
+		System.out.println(readLines);
+
+		for (String string : readLines) {
+			System.out.println(string);
+		}
+
+		System.out.println("GIT class changes");
+
+	}
+
 }
 //	
 //
